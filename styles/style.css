@@ -1,1 +1,6 @@
-/* место для вашего кода */
+
+
+
+.header__links-list-item {
+    list-style: circle;
+}
