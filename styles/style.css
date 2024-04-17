@@ -1,5 +1,36 @@
+.header {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-areas:
+    "menu logo address";
+}
 
+.header__menu {
+    grid-area: menu;
+    align-self: center;
+    justify-self: end;
+}
 
+.header__logo {
+    grid-area: logo;
+    align-self: center;
+    justify-self: center;
+}
+
+.address {
+    grid-area: address;
+    align-self: center;
+    justify-self: center;
+}
+
+.header__links-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.header__links-list-item_no-bullit  {
+    list-style: none;
+}
 
 .header__links-list-item {
     list-style: circle;
