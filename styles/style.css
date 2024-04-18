@@ -3,24 +3,31 @@
     grid-template-columns:repeat(3, 1fr);
     grid-template-areas:
     "menu logo address";
+    width: 1052px;
+    height: 105px;
+    margin-top: 92px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .header__menu {
     grid-area: menu;
     align-self: center;
-    justify-self: end;
+    justify-self: center;
 }
 
 .header__logo {
     grid-area: logo;
+    width: 148px;
+    height: 105px;
     align-self: center;
     justify-self: center;
 }
 
-.address {
+.header_address {
     grid-area: address;
     align-self: center;
-    justify-self: center;
+    justify-self: flex-end;
 }
 
 .header__links-list {
@@ -34,4 +41,39 @@
 
 .header__links-list-item {
     list-style: circle;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-areas:
+    "address menu social";
+    width: 1000px;
+    height: 98px;
+    margin-top: 2842px;
+    margin-left: 50px;
+}
+
+.footer_address {
+    grid-area: address;
+    justify-self: flex-start;
+}
+
+.footer__menu {
+    justify-self: center;
+}
+
+.footer__menu-list {
+    list-style: none;
+    text-align: center;
+}
+
+.footer__social-list {
+    display: flex;
+    list-style: none;
+    width: 240px;
+    height: 48px;
+    gap: 48px;
+    justify-self: flex-end;
 }
