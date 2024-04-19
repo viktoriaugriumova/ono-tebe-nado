@@ -43,12 +43,112 @@
     list-style: circle;
 }
 
+.header__link_active {
+    text-decoration: none;
+}
+
+
+
+
+
+.overlay {
+    background-color: 
+    rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.lots {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    margin-top: 179px;
+}
+
+
+.lots__heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+
+.lots__card-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    height: 563px;
+}
+
+.card {
+    width: 334px;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card__title {
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.card__text {
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.card_type_film {
+    background-image: url(/images/card-lot-01.jpg);
+}
+
+.card_type_book {
+    background-image: url(/images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+    background-image: url(/images/card-lot-03.jpg);
+}
+
+
+
+
+.lots__look-more-link {
+    text-transform: lowercase;
+    margin-left: 40px;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
 .about {
     display: flex;
     flex-direction: row;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 146px;
+    margin-bottom: 180px;
 }
 
 .column__logo {
@@ -101,7 +201,6 @@
     "address menu social";
     width: 1000px;
     height: 98px;
-    margin-top: 2842px;
     margin-left: 50px;
 }
 
