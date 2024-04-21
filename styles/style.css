@@ -14,34 +14,39 @@
 .header__menu {
     grid-area: menu;
     align-self: center;
-    justify-self: center;
+    font-size: 18px;
+    letter-spacing: 0.01em;
 }
 
 .header__logo {
     grid-area: logo;
-    width: 148px;
+    width: 137px;
     height: 105px;
     align-self: center;
-    justify-self: center;
+    margin-left: 60px;
 }
 
 .header_address {
     grid-area: address;
     align-self: center;
     justify-self: flex-end;
+    margin-right: 30px;
 }
 
 .address {
-    font-family: Raleway;
     font-size: 18px;
     font-weight: 400;
     line-height: 24.3px;
     text-align: left;
+    font-style: normal;
+    margin-right: 30px;
 }
 
 .header__links-list {
     display: flex;
-    column-gap: 30px;
+    column-gap: 22px;
+    text-wrap: nowrap;
+    margin-left: 30px;
 }
 
 .header__links-list-item_no-bullit  {
@@ -75,7 +80,6 @@
 .cover__title {
     color: rgba(255, 255, 255, 1);
     text-transform: uppercase;
-    font-family: Raleway;
     font-size: 100px;
     font-weight: 700;
     line-height: 115px;
@@ -128,7 +132,6 @@
 .cover__description-text {
     color: rgba(255, 255, 255, 1);
     text-transform: uppercase;
-    font-family: Raleway;
     font-size: 22px;
     font-weight: 400;
     line-height: 28px;
@@ -160,8 +163,7 @@
 
 .lots__heading {
     text-transform: uppercase;
-    margin-left: 40px;
-    font-family: Raleway;
+    margin-left: 62px;
     font-size: 40px;
     font-weight: 700;
     line-height: 46.96px;
@@ -196,7 +198,6 @@
     right: 40px;
     left: 40px;
     top: 51px;
-    font-family: Raleway;
     font-size: 22px;
     font-weight: 700;
     line-height: 26.4px
@@ -209,7 +210,6 @@
     right: 40px;
     left: 40px;
     bottom: 48px;
-    font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -229,9 +229,8 @@
 
 .lots__look-more-link {
     text-transform: lowercase;
-    margin-left: 40px;
+    margin-left: 62px;
     text-decoration: underline;
-    font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
     line-height: 23.48px;
@@ -249,6 +248,8 @@
 
 .column__logo {
     width: 100%;
+    margin-left: 50px;
+    margin-top: 30px;
 }
 
 .about__logo {
@@ -274,12 +275,19 @@
 
 .about__title {
     margin-bottom: 100px;
-    font-family: 'Raleway';
-    font-weight: bold;
     text-transform: uppercase;
     font-size: 40px;
     font-weight: 700;
     line-height: 46.96px;
+    text-align: left;
+    margin-top: 37px;
+}
+
+.about__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
     text-align: left;
 }
 
