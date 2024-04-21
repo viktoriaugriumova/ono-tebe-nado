@@ -256,13 +256,14 @@
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about__logo-image {
     width: 148px;
     height: 114px;
-    margin-left: 47px;
 }
 
 .column__text {
@@ -321,4 +322,8 @@
     height: 48px;
     gap: 48px;
     justify-self: flex-end;
+}
+
+.footer__social-list-item {
+    width: -moz-available;
 }
