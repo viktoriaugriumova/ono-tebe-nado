@@ -1,39 +1,29 @@
 .header {
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    grid-template-areas:
-    "menu logo address";
-    width: 1052px;
-    height: 105px;
+    display: flex;
+    max-width: 1052px;
     margin-top: 92px;
     margin-left: 24px;
-    margin-right: 24px;
     margin-bottom: 96px;
 }
 
 .header__menu {
-    grid-area: menu;
-    align-self: center;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 0.01em;
-    line-height: 21.13px;
-    text-align: left;
+    display: flex;
+    align-items: center;
 }
 
 .header__links-list {
     display: flex;
-    column-gap: 22px;
-    text-wrap: nowrap;
-    margin-left: 30px;
+    list-style: circle;
+    margin-left: 28px;
+    column-gap: 28px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 21.13px;
 }
 
 .header__links-list-item_no-bullit {
     list-style: none;
-}
-
-.header__links-list-item {
-    list-style: circle;
 }
 
 .header__link_active {
@@ -41,16 +31,12 @@
 }
 
 .header__logo {
-    grid-area: logo;
     width: 137px;
     height: 105px;
-    align-self: center;
-    margin-left: 60px;
+    margin-left: 45px;
 }
 
 .address {
-    grid-area: address;
-    justify-self: flex-center;
     font-size: 18px;
     font-weight: 400;
     line-height: 24.3px;
@@ -59,15 +45,20 @@
 }
 
 .header__address {
-    justify-self: center;
+    align-self: center;
+    margin-left: 190px;
 }
 
 .cover {
+    display: flex;
+    flex-direction: column;
     background-image: url(../images/cover.jpg);
     background-size: cover;
-    width: 1100px;
-    height: 757px;
+    background-repeat: no-repeat;
     position: relative;
+    align-items: normal;
+    justify-content: space-around;
+    z-index: -2;
 }
 
 .overlay {
@@ -78,35 +69,33 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
 }
 
 .cover__title {
+    display: flex;
+    flex-direction: column;
     color: rgba(255, 255, 255, 1);
     text-transform: uppercase;
     font-size: 100px;
     font-weight: 700;
     line-height: 115px;
     letter-spacing: 0.3em;
-    width: 1000px;
-    height: 355px;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 50px;
-    left: 50px;
-    bottom: 237px;
-    top: 165px;
-    }
+    margin: 165px 50px 128px 50px;
+    /* width: 1000px;
+    height: 355px; */
+}
 
 .aligned-text {
     display: block;
     text-align: left;
+    margin-bottom: 12px;
 }
 
 .aligned-text_center {
     display: block;
     text-align: center;
+    margin-bottom: 5px;
 }
 
 .aligned-text_right {
@@ -128,13 +117,10 @@
 
 .cover__description {
     display: flex;
-    justify-content: space-between;
+    justify-content: inherit;
     align-items: center;
-    position: absolute;
-    right: 50px;
-    left: 78px;
-    bottom: 51px;
-    top: 655px;
+    margin-bottom: 49px;
+    z-index: 1;
 }
 
 .cover__description-text {
@@ -144,7 +130,9 @@
     font-weight: 400;
     line-height: 28px;
     text-align: left;
-    word-spacing: 21px;
+    word-spacing: 18px;
+    font-family: Raleway;
+    margin-left: 39px;
 }
 
 .bet-button {
@@ -185,14 +173,16 @@
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 334px;
     height: 100%;
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
     background-size: cover;
     background-position: center;
     position: relative;
+    z-index: 1;
 }
 
 .card-link {
@@ -204,25 +194,23 @@
     text-transform: uppercase;
     text-decoration: underline;
     text-align: left;
-    position: absolute;
-    right: 40px;
-    left: 40px;
-    top: 51px;
     font-size: 22px;
     font-weight: 700;
-    line-height: 26.4px
+    line-height: 26.4px;
+    margin-top: 51px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .card__text {
     color: rgba(255, 255, 255, 1);
     text-align: left;
-    position: absolute;
-    right: 40px;
-    left: 40px;
-    bottom: 48px;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
+    margin-bottom: 48px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .card_type_film {
@@ -297,22 +285,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 693px;
-    height: 312px;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.01em;
     text-align: left;
+    row-gap: 24px;
 }
 
 .footer {
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    grid-template-areas:
-    "address menu social";
-    width: 1000px;
-    height: 98px;
+    display: flex;
+    justify-content: space-between;
+    /* width: 1000px;
+    height: 98px; */
     margin-left: 50px;
     margin-bottom: 88px;
 }
@@ -330,10 +315,12 @@
     text-align: center;
     font-size: 18px;
     line-height: 21.13px;
+    margin-left: 40px;
 }
 
 .footer__social-list {
     display: flex;
+    margin-right: 50px;
     list-style: none;
     width: 240px;
     height: 48px;
@@ -344,3 +331,4 @@
 .footer__social-list-item {
     width: -moz-available;
 }
+
