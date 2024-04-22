@@ -16,6 +16,7 @@
     align-self: center;
     font-size: 18px;
     letter-spacing: 0.01em;
+    line-height: 21.13px;
 }
 
 .header__links-list {
@@ -47,7 +48,7 @@
 
 .address {
     grid-area: address;
-    justify-self: flex-start;
+    justify-self: flex-center;
     font-size: 18px;
     font-weight: 400;
     line-height: 24.3px;
@@ -138,13 +139,12 @@
 }
 
 .bet-button {
+    font-family: Raleway;
     width: 256px;
     height: 51px;
-    top: 655px;
-    left: 794px;
     text-transform: uppercase;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 28px;
     text-align: center;
     background-color: transparent;
@@ -181,6 +181,8 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    background-size: cover;
+    background-position: center;
 }
 
 .card-link {
@@ -251,7 +253,7 @@
 }
 
 .about__logo {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 1);
     width: 240px;
     height: 240px;
     border-radius: 50%;
@@ -316,6 +318,8 @@
 .footer__menu-list {
     list-style: none;
     text-align: center;
+    font-size: 18px;
+    line-height: 21.13px;
 }
 
 .footer__social-list {
