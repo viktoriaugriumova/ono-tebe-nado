@@ -58,7 +58,7 @@
     position: relative;
     align-items: normal;
     justify-content: space-around;
-    z-index: -2;
+    z-index: 0;
 }
 
 .overlay {
@@ -69,7 +69,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 .cover__title {
@@ -79,28 +79,28 @@
     text-transform: uppercase;
     font-size: 100px;
     font-weight: 700;
-    line-height: 115px;
     letter-spacing: 0.3em;
     margin: 165px 50px 128px 50px;
-    /* width: 1000px;
-    height: 355px; */
+    z-index: 2;
 }
 
 .aligned-text {
     display: block;
     text-align: left;
     margin-bottom: 12px;
+    display: block;
+    line-height: 115px;
 }
 
 .aligned-text_center {
-    display: block;
     text-align: center;
     margin-bottom: 5px;
+    line-height: 100px;
 }
 
 .aligned-text_right {
-    display: block;
     text-align: right;
+    line-height: 100px;
 }
 
 .letter-spacing-extended {
@@ -108,10 +108,6 @@
 }
 
 .no-letter-spacing {
-    font-size: 100px;
-    font-weight: 700;
-    line-height: 100px;
-    text-align: right;
     letter-spacing: normal;
 }
 
@@ -120,7 +116,7 @@
     justify-content: inherit;
     align-items: center;
     margin-bottom: 49px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .cover__description-text {
@@ -131,12 +127,12 @@
     line-height: 28px;
     text-align: left;
     word-spacing: 18px;
-    font-family: Raleway;
+    font-family: 'Raleway', Arial, sans-serif;
     margin-left: 39px;
 }
 
 .bet-button {
-    font-family: Raleway;
+    font-family: 'Raleway', Arial, sans-serif;
     width: 256px;
     height: 51px;
     text-transform: uppercase;
@@ -169,7 +165,8 @@
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    height: 563px;
+    flex-wrap: wrap;
+    row-gap: 25px;
 }
 
 .card {
@@ -200,6 +197,7 @@
     margin-top: 51px;
     margin-left: 40px;
     margin-right: 40px;
+    z-index: 2;
 }
 
 .card__text {
@@ -211,6 +209,7 @@
     margin-bottom: 48px;
     margin-left: 40px;
     margin-right: 40px;
+    z-index: 2;
 }
 
 .card_type_film {
@@ -322,13 +321,15 @@
     display: flex;
     margin-right: 50px;
     list-style: none;
-    width: 240px;
-    height: 48px;
     gap: 48px;
     justify-self: flex-end;
 }
 
-.footer__social-list-item {
-    width: -moz-available;
+.footer__social-icon {
+    width: 48px;
+    height: 48px;
 }
+
+
+
 
